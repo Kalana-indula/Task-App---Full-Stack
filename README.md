@@ -47,6 +47,7 @@ To stop everything, press Ctrl + C in the terminal, then run:
   ```bash
   docker compose down
   ```
+### 🗄️ MySQL (Database)
 ## 🧩 Services Overview
 - Image: `mysql:8.0`
 - Database name: `todoApp`
