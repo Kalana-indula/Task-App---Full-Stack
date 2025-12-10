@@ -130,6 +130,10 @@ cd front-end
 npm install
 npm run dev
 ```
+## 📝 Notes
+- This app is designed to be **easy to spin up** for testing or demos.
+- Feel free to fork and extend (authentication, more fields, filters, etc.).
+
     
 
 
