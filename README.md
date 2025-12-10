@@ -4,6 +4,7 @@ This is a full-stack To-Do application built with:
 
 - **Backend:** Spring Boot (Java 25 , Spring Boot 4)
 - **Frontend:** Vite + React (served by Nginx)
+- **Styling:** Tailwind CSS 
 - **Database:** MySQL 8
 - **Containerization:** Docker & Docker Compose
 
@@ -90,6 +91,8 @@ https://www.youtube.com/watch?v=4hk8Za5UOBU
 ## UI of the app
 <img width="1600" height="1338" alt="screen" src="https://github.com/user-attachments/assets/95ef809b-28ad-4e7a-844e-19f0b198e3f6" />
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/76dbe1cb-f6b1-4087-8b2f-1482bbed65d8" />
+
+UI is completely responsive
 
 ## 🔧 Useful Docker Commands
 Start the stack:
