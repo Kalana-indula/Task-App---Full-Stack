@@ -94,6 +94,52 @@ https://www.youtube.com/watch?v=4hk8Za5UOBU
 
 UI is completely responsive
 
+## 📦Testing 
+
+## 🔧 Backend Testing (Spring Boot + JUnit + Mockito)
+
+The backend contains the following test layers:
+
+### ✔️ **1. Unit Tests (Service Layer)**
+These tests validate:
+- Business logic in `TaskServiceImpl`
+- Completing a task
+- Recent task retrieval
+- Error handling (e.g., `TaskNotFoundException`)
+- Validation scenarios (empty title/description)
+
+### ✔️ **2. Controller Tests (WebMvcTest)**
+These tests verify:
+- Request → Controller → Response flow
+- HTTP status codes
+- Validation errors using `@Valid`
+- Proper JSON response structure
+- Successful and failed request scenarios
+
+### ✔️ **3. Integration Tests (SpringBootTest + MockMvc)**
+These tests run against an **H2 in-memory database** and fully boot the Spring context.
+Coverage includes:
+- Creating tasks (POST /api/tasks)
+- Fetching recent tasks
+- Completing tasks
+- Error scenarios (`404` for missing tasks)
+
+This ensures the entire Spring Boot application behaves correctly end-to-end.
+
+## 🎨 Frontend Testing (Vite + React)
+### ✔️ **Component-level tests**
+- Testing UI behavior for task creation inputs
+- Ensuring empty validation messages appear correctly
+- Verifying that the task list renders correctly
+- Confirming task completion events fire as expected
+
+### ✔️ **Integration-level tests**
+- Testing API interaction using mocked endpoints
+- Ensuring frontend reacts correctly to backend responses
+- Edge case handling (empty task list UI state)
+
+Frontend tests ensure the UI remains reliable and stable across changes.
+
 ## 🔧 Useful Docker Commands
 Start the stack:
 
