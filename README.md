@@ -33,7 +33,7 @@ To run this app, you only need:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Kalana-indula/Task-App-Full-Stack.git
-   cd to-do-application
+   cd Task-App-Full-Stack-master
    ```
 2. Build and start all services (backend, frontend, MySQL):
   ```bash
