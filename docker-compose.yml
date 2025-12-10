@@ -1,0 +1,43 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: todo-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: todoApp
+      MYSQL_USER: todo_user
+      MYSQL_PASSWORD: todo_pass
+    volumes:
+      - todo-mysql-data:/var/lib/mysql
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: todo-backend
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/todoApp?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: todo_user
+      SPRING_DATASOURCE_PASSWORD: todo_pass
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./front-end       
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: "/api"    
+    container_name: todo-frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"         
+    restart: always
+
+volumes:
+  todo-mysql-data:
