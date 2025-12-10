@@ -140,6 +140,8 @@ This ensures the entire Spring Boot application behaves correctly end-to-end.
 
 Frontend tests ensure the UI remains reliable and stable across changes.
 
+**All the test codes are included in the repository**
+
 ## 🔧 Useful Docker Commands
 Start the stack:
 
