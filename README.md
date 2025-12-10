@@ -90,8 +90,9 @@ This video shows how the app is run an used after creating a container
 https://www.youtube.com/watch?v=4hk8Za5UOBU
 
 ## UI of the app
-![Screenshot_10-12-2025_155631_localhost](https://github.com/user-attachments/assets/ae882213-00d8-4a8d-9674-7b6e0cf6229b)
+![Screenshot_10-12-2025_15580_localhost](https://github.com/user-attachments/assets/c141a1c6-6806-4019-a063-bfa0b5f2f101)
 ![Screenshot_10-12-2025_15562_localhost](https://github.com/user-attachments/assets/cb836bb9-5569-46a3-ac3e-01f8ddf495ac)
+![Screenshot_10-12-2025_155837_localhost](https://github.com/user-attachments/assets/af04aad9-942d-4d2c-883d-363ab9169d08)
 
 UI is completely responsive
 
